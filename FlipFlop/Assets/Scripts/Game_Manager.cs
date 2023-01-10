@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class Game_Manager : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class Game_Manager : MonoBehaviour
             FlappyBirdController.isGameStarted = value;
             isGameStarted = value;
         }
+    }
+
+    void Start()
+    {
+        //Analytiikan lähettäminen
+        AnalyticsEvent.GameStart();
     }
 
     void Awake()

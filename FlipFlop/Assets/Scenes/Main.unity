@@ -168,8 +168,8 @@ Camera:
   m_GameObject: {fileID: 7077192}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -674,6 +674,7 @@ GameObject:
   - component: {fileID: 2041174705}
   - component: {fileID: 2041174704}
   - component: {fileID: 2041174703}
+  - component: {fileID: 2041174706}
   m_Layer: 0
   m_Name: AdDisplayObject
   m_TagString: Untagged
@@ -708,8 +709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd48665c35806644b2023ec9d8ff083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 5110425
-  _iOSGameId: 5110424
+  _androidGameId: 5115057
+  _iOSGameId: 5115056
   _testMode: 1
 --- !u!4 &2041174705
 Transform:
@@ -726,6 +727,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041174706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041174702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e124571a90fd684a8283095b9173043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS
 --- !u!1001 &3755780681630323803
 PrefabInstance:
   m_ObjectHideFlags: 0
